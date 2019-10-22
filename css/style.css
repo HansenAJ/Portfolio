@@ -1,15 +1,22 @@
 *{
     font-size: 20px;
 }
-h1{
-    text-align: center;
+body{
+    background-image: url("../pictures/alpha_centauri.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
+
 h2{
     text-align: center;
     padding: 20px;
-    margin: 0;
     height: 20px;
+    background-color: rgba(71, 74, 78, 0.473);
+    color: whitesmoke;
+    border-radius: 5%;
+    margin: 10px;
 }
+
 header{
     text-align: center;
 }
@@ -42,22 +49,39 @@ article ul{
 
 p {
     max-width: 800px;
-    padding: 25px 10px;
+    padding: 10px;
+    background-color: rgba(71, 74, 78, 0.473);
+    color: whitesmoke;
+    border-radius: 5%;
+    margin: 10px;
+    overflow: auto;
 }
 
 .art_Even_Left, .img_Even_Left{
     justify-content: flex-start;
     /*flex-basis: 100%;*/
-    background: blue;
+    /* background: blue; */
+    display: flex;
 }
 
 .art_Odd_Right, .img_Odd_Right{
     justify-content: flex-end;
     /*flex-basis: 100%;*/
-    background: red;
+    /* background: red; */
 }
 .article_Inner{
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgba(71, 74, 78, 0.473);
+    color: whitesmoke;
+    border-radius: 5%;
+    margin: 10px;
 }
 
 
